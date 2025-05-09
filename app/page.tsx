@@ -107,31 +107,7 @@ export default function Home() {
       {/* Hero Section with Particles - Unchanged */}
       <section className="h-screen relative">
         <MarkupXParticles />
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2, duration: 0.8, ease: "easeOut" }}
-        >
-          <p className="text-white/70 mb-2 text-sm">Scroll to explore</p>
-          <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="opacity-70"
-            >
-              <path d="M12 5v14"></path>
-              <path d="m19 12-7 7-7-7"></path>
-            </svg>
-          </motion.div>
-        </motion.div>
+        
       </section>
 
       {/* Coffee Pattern Background Section */}
